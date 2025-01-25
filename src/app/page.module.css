@@ -1,0 +1,230 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #0D0D0D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 32px);
+    padding: 48px 16px;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E6F9F;
+    color: #F2F2F2;
+    font-weight: 700;
+    height: 54px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.buttonIcon {
+    margin-left: 6px;
+}
+
+.rocket {
+    margin-right: 12px;
+    width: 33px;
+    height: 48px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.title1 {
+    color: #4EA8DE;
+    margin-right: 8px;
+}
+
+.title2 {
+    color: #5E60CE
+}
+
+.main {
+    max-width: 800px;
+    width: calc(100% - 32px);
+    padding-top: 92px;
+    position: relative;
+}
+
+.createTaskButton {
+    position: absolute;
+    top: -27px;
+}
+
+.tasksDetails {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.tasksDetailLabel {
+    color: #4EA8DE;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.tasksDetailValue {
+    color: #D9D9D9;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #333333;
+    border-radius: 16px;
+    padding: 3px 9px;
+}
+
+.tasksEmpty {
+    border: 2px solid transparent;
+    border-top-color: #333333;
+    border-radius: 16px;
+    margin-top: 24px;
+    text-align: center;
+    color: #808080;
+    padding-top: 64px;
+    font-size: 16px;
+}
+
+.tasksEmptyLine1 {
+    font-weight: 700;
+}
+
+.back {
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+.back:hover {
+    opacity: .8;
+}
+
+.formLabel {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4EA8DE;
+    margin-bottom: 12px;
+}
+
+.formInput {
+    color: #F2F2F2;
+    width: 100%;
+    background-color: #262626;
+    border: 1px solid #333333;
+    outline: none;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.formInput::placeholder {
+    color: #787878;
+}
+
+.formColors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.formColor {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.formColor:hover:not(.formColorSelected) {
+    border: 1px solid #F2F2F2;
+}
+
+.formColorSelected {
+    border: 2px solid #F2F2F2;
+}
+
+.tasks {
+    margin-top: 24px;
+}
+
+.task {
+    border: 1px solid #333333;
+    background-color: #262626;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.task:hover {
+    background-color: #323232;
+}
+
+.taskUnchecked {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.taskUnchecked:hover {
+    opacity: .8;
+}
+
+.taskChecked {
+    width: 18px;
+    height: 18px;
+    color: #F2F2F2;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.taskChecked:hover {
+    opacity: .8;
+}
+
+.taskTitle {
+    color: #F2F2F2;
+    font-size: 14px;
+    margin: 0 12px;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 56px);
+}
+
+.taskDelete {
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.taskDelete:hover {
+    opacity: .8;
+}
